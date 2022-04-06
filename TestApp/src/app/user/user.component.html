@@ -1,0 +1,11 @@
+<p>position</p>
+<p><label>latitude:</label> <label>{{currentPosition.latitude}}</label></p>
+<p><label>longitude:</label> <label>{{currentPosition.longitude}}</label></p>
+<button (click)="addNote()">add note</button>
+<p>notes:</p>
+<ul>
+    <li *ngFor="let note of notes">
+        <label>note.message</label>
+        <label>note.timestamp</label>
+    </li>
+</ul>
